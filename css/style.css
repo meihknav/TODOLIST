@@ -1,0 +1,129 @@
+*{
+   padding: 0;
+   margin : 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+body{
+height: 100vh;
+width: 100%;
+padding : 10px;
+background: linear-gradient(to bottom, #00FFC6 0%, #30AADD 100% );
+}
+.app{
+margin: 120px auto;
+max-width: 400px;
+width: 100%;
+background-color: #fff;
+padding: 25px;
+border-radius: 5px;
+box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+
+}
+.app header{
+   font-size: 30px;
+   font-weight: 600;
+}
+.app .inputFied{
+   width: 100%;
+   height: 45px;
+   margin: 20px 0;
+   display: flex;
+
+}
+.inputFied input{
+height: 100%;
+width: 85%;
+outline: none;
+border: 1px solid #ccc;
+padding-left: 15px;
+font-size: 17px;
+border-radius: 3px;
+transition: all 0.3s ease;
+}
+
+.inputFied button{
+   height: 100%;
+   width: 50px;
+   border: none;
+   color: #fff;
+   background-color: #F900BF;
+   outline: none;
+   cursor: pointer;
+   border-radius: 3px;
+   margin-left: 5px;
+   font-size: 20px;
+   opacity: 0.6;
+   pointer-events: none;
+   transition: all 0.3s ease;
+}
+.inputFied button.active{
+   opacity: 1;
+   pointer-events: auto;
+}
+.Todolist {
+   max-height: 250px;
+   overflow-y : auto;
+
+}
+.Todolist li{
+   list-style: none;
+   margin-bottom: 8px;
+   background-color: #f2f2f2;
+   padding: 10px 15px;
+   border-radius: 3px;
+   position: relative;
+   word-wrap: break-word;
+   overflow: hidden;
+   cursor: default;
+
+}
+.Todolist li span {
+right: -50px;
+position: absolute;
+top:50%;
+transform: translateY(-50%);
+background: #e74c3c;
+text-align: center;
+width: 50px;
+color: #fff;
+padding : 10px 15px;
+border-radius: 0 3px 3px 0;
+cursor: pointer;
+height: 39px;
+transition: all 0.2s ease;
+}
+.Todolist li:hover span{
+   right:0px;
+}
+.app .footer{
+   display: flex;
+   width: 100%;
+   margin-top: 20px;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.footer button{
+   padding: 6px 10px;
+   border-radius: 3px;
+   border: none;
+   outline: none;
+   color: #fff;
+   font-weight: 400px;
+   font-size: 16px;
+   margin-left: 5px;
+   background: #8E49E8;
+   cursor: pointer;
+   user-select: none;
+   opacity: 0.6;
+   pointer-events: none;
+   transition: all 0.3s ease;
+}
+
+.footer button.active {
+   opacity: 1;
+   pointer-events: auto;
+}
+
+
